@@ -19,6 +19,7 @@ class ExperienceTile extends StatelessWidget {
         border: Border.all(color: const Color(0xFFEDEDED)),
       ),
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
@@ -55,10 +56,11 @@ class ExperienceTile extends StatelessWidget {
                 children: [
                   const Padding(
                     padding: EdgeInsets.only(top: 6),
-                    child: Icon(Icons.circle, size: 7, color: Color(0xFF111111)),
+                    child:
+                        Icon(Icons.circle, size: 7, color: Color(0xFF111111)),
                   ),
                   const SizedBox(width: 10),
-                  Expanded(
+                  Flexible(
                     child: Text(
                       b,
                       style: TextStyle(

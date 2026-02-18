@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:portfolio/models/portfolio_data.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -127,20 +128,19 @@ class _HomePageState extends State<HomePage> {
                     builder: (context, c) {
                       final w = c.maxWidth;
                       final cols = w >= 1000 ? 3 : (w >= 700 ? 2 : 1);
-                      return GridView.builder(
+                      return MasonryGridView.count(
+                        crossAxisCount: cols,
+                        mainAxisSpacing: 16,
+                        crossAxisSpacing: 16,
                         itemCount: PortfolioData.caseStudies.length,
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: cols,
-                          crossAxisSpacing: 16,
-                          mainAxisSpacing: 16,
-                          childAspectRatio: cols == 1 ? 1.25 : 1.05,
-                        ),
                         itemBuilder: (context, i) {
                           final cs = PortfolioData.caseStudies[i];
                           return CaseStudyCard(
-                              data: cs, onPressed: () => _open(cs.url));
+                            data: cs,
+                            onPressed: () => _open(cs.url),
+                          );
                         },
                       );
                     },
@@ -209,6 +209,7 @@ class _HomePageState extends State<HomePage> {
                     builder: (context, c) {
                       final w = c.maxWidth;
                       final cols = w >= 980 ? 3 : (w >= 680 ? 2 : 1);
+
                       return GridView.builder(
                         itemCount: PortfolioData.experiences.length,
                         shrinkWrap: true,
@@ -217,7 +218,7 @@ class _HomePageState extends State<HomePage> {
                           crossAxisCount: cols,
                           crossAxisSpacing: 16,
                           mainAxisSpacing: 16,
-                          childAspectRatio: cols == 1 ? 1.25 : 1.05,
+                          mainAxisExtent: cols == 1 ? 420 : 390, // ⭐ SOLUÇÃO
                         ),
                         itemBuilder: (context, i) =>
                             ExperienceTile(data: PortfolioData.experiences[i]),
@@ -301,10 +302,12 @@ class _HomePageState extends State<HomePage> {
 
           // top navbar overlay
           SafeArea(
-            child: PillNavBar(
-              items: navItems,
-              isMobile: isMobile,
-              onTapMenu: () => Scaffold.of(context).openEndDrawer(),
+            child: Builder(
+              builder: (context) => PillNavBar(
+                items: navItems,
+                isMobile: isMobile,
+                onTapMenu: () => Scaffold.of(context).openEndDrawer(),
+              ),
             ),
           ),
         ],
