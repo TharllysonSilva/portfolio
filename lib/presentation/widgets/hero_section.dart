@@ -169,7 +169,7 @@ class _AvatarBlock extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Available for',
+              'Disponível para',
               style: TextStyle(color: t.subtle, fontWeight: FontWeight.w600),
             ),
             const SizedBox(height: 4),

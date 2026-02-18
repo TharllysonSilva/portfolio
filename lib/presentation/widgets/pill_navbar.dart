@@ -79,7 +79,7 @@ class PillNavBar extends StatelessWidget {
                   )
                 else
                   _PrimaryPill(
-                    label: 'Get in touch',
+                    label: 'Entre em contato',
                     onPressed: items.last.onPressed,
                   ),
               ],
