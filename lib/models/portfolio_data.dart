@@ -143,7 +143,7 @@ class PortfolioData {
           'Arquitetura Flutter para SuperApp governamental com mini-apps modulares. '
           'Definição de padrões, modularização por domínio e governança técnica '
           'para garantir escalabilidade e evolução contínua da plataforma.',
-      ctaLabel: 'View Architecture',
+      ctaLabel: 'Ver detalhes',
       url:
           'https://play.google.com/store/apps/details?id=br.jus.tjrs.superapp.tjrs&pcampaignid=web_share',
       tone: Tone.mint,
@@ -155,7 +155,7 @@ class PortfolioData {
           'Evolução da arquitetura mobile de aplicativo de saúde com milhares de usuários. '
           'Melhoria contínua de performance, estabilidade e experiência do usuário.'
           'Foco em performance, qualidade, offline-first e integrações seguras com backend.',
-      ctaLabel: 'See Details',
+      ctaLabel: 'Ver detalhes',
       url:
           'https://play.google.com/store/apps/details?id=com.appdobeneficiario.planserv&pcampaignid=web_share',
       tone: Tone.sand,
@@ -167,7 +167,7 @@ class PortfolioData {
           'Criação de Design System Flutter com tokens, componentes e guidelines. '
           'Responsavel do TapOn do aplicativo de pagamentos, com mais de 1 milhão de usuários ativos.'
           'Padronização visual e aceleração do desenvolvimento em múltiplos apps.',
-      ctaLabel: 'View System',
+      ctaLabel: 'Ver detalhes',
       url:
           'https://play.google.com/store/apps/details?id=br.com.getnet.supergetmobile&pcampaignid=web_share',
       tone: Tone.lavender,
