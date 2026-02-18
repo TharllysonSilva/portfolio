@@ -1,7 +1,7 @@
 class PortfolioData {
   static const name = 'Tarllysson Silva';
   static const title = 'Mobile Software Architect • Flutter Specialist';
-  static const location = 'Brazil • Remote Worldwide';
+  static const location = 'Brasil • Remote Worldwide';
 
   static const summary =
       'Mobile Software Architect especializado em Flutter com foco em aplicações de grande escala, '
@@ -77,6 +77,7 @@ class PortfolioData {
       bullets: [
         'Criação de Design System Flutter com tokens e componentes reutilizáveis.',
         'Padronização visual e técnica entre múltiplos produtos.',
+        'Responsavel do TapOn do aplicativo de pagamentos, com mais de 1 milhão de usuários ativos.',
         'Aceleração da produtividade de squads mobile.',
       ],
     ),
@@ -92,7 +93,7 @@ class PortfolioData {
           'Definição de padrões, modularização por domínio e governança técnica '
           'para garantir escalabilidade e evolução contínua da plataforma.',
       ctaLabel: 'View Architecture',
-      url: 'https://www.linkedin.com/in/tharllyson-silva/',
+      url: 'https://play.google.com/store/apps/details?id=br.jus.tjrs.superapp.tjrs&pcampaignid=web_share',
       tone: Tone.mint,
     ),
     CaseStudy(
@@ -102,7 +103,7 @@ class PortfolioData {
           'Evolução da arquitetura mobile de aplicativo de saúde com milhares de usuários. '
           'Foco em performance, qualidade, offline-first e integrações seguras com backend.',
       ctaLabel: 'See Details',
-      url: 'https://www.linkedin.com/in/tharllyson-silva/',
+      url: 'https://play.google.com/store/apps/details?id=com.appdobeneficiario.planserv&pcampaignid=web_share',
       tone: Tone.sand,
     ),
     CaseStudy(
@@ -110,9 +111,10 @@ class PortfolioData {
       title: 'Getnet Samba Design System',
       description:
           'Criação de Design System Flutter com tokens, componentes e guidelines. '
+          'Responsavel do TapOn do aplicativo de pagamentos, com mais de 1 milhão de usuários ativos.'
           'Padronização visual e aceleração do desenvolvimento em múltiplos apps.',
       ctaLabel: 'View System',
-      url: 'https://www.behance.net/tharllysonsilva',
+      url: 'https://play.google.com/store/apps/details?id=br.com.getnet.supergetmobile&pcampaignid=web_share',
       tone: Tone.lavender,
     ),
   ];

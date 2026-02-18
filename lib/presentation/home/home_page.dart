@@ -49,11 +49,11 @@ class _HomePageState extends State<HomePage> {
     final isMobile = MediaQuery.of(context).size.width < 860;
 
     final navItems = [
-      NavItem(label: 'Work', onPressed: () => _go(_kWork)),
-      NavItem(label: 'About', onPressed: () => _go(_kAbout)),
-      NavItem(label: 'Experience', onPressed: () => _go(_kExperience)),
-      NavItem(label: 'Skills', onPressed: () => _go(_kSkills)),
-      NavItem(label: 'Contact', onPressed: () => _go(_kContact)),
+      NavItem(label: 'Trabalhos', onPressed: () => _go(_kWork)),
+      NavItem(label: 'Sobre', onPressed: () => _go(_kAbout)),
+      NavItem(label: 'Experiência', onPressed: () => _go(_kExperience)),
+      NavItem(label: 'Habilidades', onPressed: () => _go(_kSkills)),
+      NavItem(label: 'Contato', onPressed: () => _go(_kContact)),
     ];
 
     return Scaffold(
@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     const SizedBox(height: 6),
                     ListTile(
-                      title: const Text('Work',
+                      title: const Text('Trabalhos',
                           style: TextStyle(fontWeight: FontWeight.w800)),
                       onTap: () {
                         Navigator.pop(context);
@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                       },
                     ),
                     ListTile(
-                      title: const Text('About',
+                      title: const Text('Sobre',
                           style: TextStyle(fontWeight: FontWeight.w800)),
                       onTap: () {
                         Navigator.pop(context);
@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                       },
                     ),
                     ListTile(
-                      title: const Text('Experience',
+                      title: const Text('Experiência',
                           style: TextStyle(fontWeight: FontWeight.w800)),
                       onTap: () {
                         Navigator.pop(context);
@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                       },
                     ),
                     ListTile(
-                      title: const Text('Skills',
+                      title: const Text('Habilidades',
                           style: TextStyle(fontWeight: FontWeight.w800)),
                       onTap: () {
                         Navigator.pop(context);
@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     const Divider(),
                     ListTile(
-                      title: const Text('Get in touch',
+                      title: const Text('Entre em contato',
                           style: TextStyle(fontWeight: FontWeight.w900)),
                       onTap: () {
                         Navigator.pop(context);
@@ -121,8 +121,8 @@ class _HomePageState extends State<HomePage> {
               SliverToBoxAdapter(
                 child: SectionShell(
                   sectionKey: _kWork,
-                  eyebrow: 'Selected work',
-                  title: 'Case studies & outcomes',
+                  eyebrow: 'Trabalhos selecionados',
+                  title: 'Estudos de caso e resultados',
                   child: LayoutBuilder(
                     builder: (context, c) {
                       final w = c.maxWidth;
@@ -150,8 +150,8 @@ class _HomePageState extends State<HomePage> {
               SliverToBoxAdapter(
                 child: SectionShell(
                   sectionKey: _kAbout,
-                  eyebrow: 'About',
-                  title: 'Architecture-first. Product-minded.',
+                  eyebrow: 'Sobre',
+                  title: 'Arquitetura em primeiro lugar. Foco no produto.',
                   child: Container(
                     padding: const EdgeInsets.all(22),
                     decoration: BoxDecoration(
@@ -203,8 +203,8 @@ class _HomePageState extends State<HomePage> {
               SliverToBoxAdapter(
                 child: SectionShell(
                   sectionKey: _kExperience,
-                  eyebrow: 'Experience',
-                  title: 'Leadership, governance & delivery',
+                  eyebrow: 'Experiência',
+                  title: 'Liderança, governança e entrega',
                   child: LayoutBuilder(
                     builder: (context, c) {
                       final w = c.maxWidth;
@@ -229,8 +229,8 @@ class _HomePageState extends State<HomePage> {
               SliverToBoxAdapter(
                 child: SectionShell(
                   sectionKey: _kSkills,
-                  eyebrow: 'Skills',
-                  title: 'Tooling & patterns I ship with',
+                  eyebrow: 'Habilidades',
+                  title: 'Ferramentas e padrões que eu forneço',
                   child: Wrap(
                     spacing: 10,
                     runSpacing: 10,
@@ -243,8 +243,8 @@ class _HomePageState extends State<HomePage> {
               SliverToBoxAdapter(
                 child: SectionShell(
                   sectionKey: _kContact,
-                  eyebrow: 'Contact',
-                  title: 'Let’s build something scalable.',
+                  eyebrow: 'Contato',
+                  title: 'Vamos construir algo escalável.',
                   child: Container(
                     padding: const EdgeInsets.all(22),
                     decoration: BoxDecoration(
@@ -397,7 +397,7 @@ class _HeroSection extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(999)),
                       ),
-                      child: const Text('Open LinkedIn',
+                      child: const Text('LinkedIn',
                           style: TextStyle(fontWeight: FontWeight.w800)),
                     ),
                     OutlinedButton(
